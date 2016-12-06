@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jan Lupač - Project manager</title>
+    <link rel="stylesheet" href="style/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Prezentační webová stránka Jana Lupače" />
+    <meta name="keywords" content="Projektový manažer, Jan Lupač, klíčové slovo, osobní stránka" />
+    <meta name="author" content="Aleš Mráz">
+    <meta name="ROBOTS" content="index, follow">
+    <link rel="icon" href="image/favicon.ico">
+   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
+</head>
+<body>
+<div class="header">
+    <div class="header--text">
+        <h1 class="author">Jan <span>Lupac</span></h1>
+         <h3>Junior Project manager</h3>
+    </div>
+</div>
+
+
+<div class="container">
+    <p>„Hi, feel free to send me<br> a greeting at <a href="mailto:janlupac@outlook.com">janlupac@outlook.com</a>
+    and<br> look at me on <a href="https://www.linkedin.com">LinkedIn.</a>“
+    </p>
+</div>
+
+<div class="footer">
+    <div class="footer--center">
+        <span>Design and Code by Aleš Mráz</span>
+        <span>©Jan Lupač, <span id="year"></span></span>
+    </div>
+        <script>
+        var t = document.createTextNode(new Date().getFullYear());
+        document.getElementById('year').appendChild(t);
+    </script>
+</div>
+</body>
+</html>
