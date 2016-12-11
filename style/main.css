@@ -213,8 +213,8 @@ html {
   max-width: 450px;
   margin: 0 auto;
   padding: 12% 3% 3% 3%;
-  animation: fadein 2s;
-  transition: padding-top 2s;
+  animation: fadein 1.5s;
+  transition: padding-top 1.5s;
   font-size: 1.6em; }
   .header--text .author {
     font-weight: 400; }
@@ -246,12 +246,16 @@ html {
   margin: 0 auto;
   line-height: 2; }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 1450px) {
+  .header--text {
+    margin: 0 0 0 45%; } }
+@media only screen and (max-width: 1060px) {
   .container {
     font-size: 1.7em; }
 
   .header--text {
-    padding: 35% 3% 3% 5%; }
+    padding: 10% 3% 3% 5%;
+    margin: 0 0 0 40%; }
 
   @keyframes fadein {
     from {
@@ -259,6 +263,9 @@ html {
       padding-top: 5%; }
     to {
       opacity: 1;
-      padding-top: 35%; } } }
+      padding-top: 10%; } } }
+@media only screen and (max-width: 780px) and (orientation: portrait) {
+  .header--text {
+    margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
