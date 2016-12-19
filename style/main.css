@@ -210,14 +210,12 @@ html {
 
 .header--text {
   color: #fff;
-  max-width: 450px;
-  margin: 0 auto;
-  padding: 12% 3% 3% 3%;
-  animation: fadein 1.5s;
-  transition: padding-top 1.5s;
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  margin: 0 0 0 40%;
+  padding-top: 10%; }
   .header--text .author {
-    font-weight: 400; }
+    font-weight: 400;
+    margin: 0; }
   .header--text h1 {
     text-transform: uppercase; }
     .header--text h1 span {
@@ -246,26 +244,23 @@ html {
   margin: 0 auto;
   line-height: 2; }
 
-@media only screen and (max-width: 1450px) {
+@media (max-width: 1450px) {
   .header--text {
-    margin: 0 0 0 45%; } }
-@media only screen and (max-width: 1060px) {
+    margin: 0 0 0 520px;
+    padding-top: 140px; } }
+@media (max-width: 950px) {
+  .header--text {
+    margin: 0 0 0 20px;
+    max-width: 240px;
+    font-size: 1.4em; }
+
   .container {
-    font-size: 1.7em; }
-
+    font-size: 1.4em; } }
+@media (orientation: landscape) and (max-width: 950px) {
   .header--text {
-    padding: 10% 3% 3% 5%;
-    margin: 0 0 0 40%; }
+    padding: 15vh 0 0 60vh; }
 
-  @keyframes fadein {
-    from {
-      opacity: 0;
-      padding-top: 5%; }
-    to {
-      opacity: 1;
-      padding-top: 10%; } } }
-@media only screen and (max-width: 780px) and (orientation: portrait) {
-  .header--text {
-    margin: 0; } }
+  .container p {
+    padding: 0 10% 0 10%; } }
 
 /*# sourceMappingURL=main.css.map */
